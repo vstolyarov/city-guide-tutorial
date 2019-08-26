@@ -1,5 +1,6 @@
 import React from "react";
-import logo from "../logo.svg";
+import logo from "../../logo.svg";
+
 function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-dark">
