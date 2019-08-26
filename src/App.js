@@ -1,7 +1,6 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 import Navbar from "./components/layouts/Navbar";
 import Footer from "./components/layouts/Footer";
 //React Router Import
@@ -19,11 +18,11 @@ class App extends Component {
       <div>
         <Navbar />
         <Switch>
-          <Route path="/home" component={Home} />
+          <Route exact path="/" component={Home} />
           <Route path="/news" component={News} />
           <Route path="/contacts" component={Contacts} />
           <Route path="/details" component={Details} />
-          <Route path="/not-found-page" component={NotFoundPage} />
+          <Route component={NotFoundPage} />
         </Switch>
         <Footer />
       </div>
